@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu de questões resolvidas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <style>
+      
+ h3 {
+  text-decoration: underline;
+  font-weight: 900;
+}
+li {
+  font-weight: 600;
+}
+h5 {
+  text-indent: 20px;
+  font-weight: bold;
+}
+h6 {
+  text-indent: 20px;
+  font-weight: bold;
+}
+p {
+  text-indent: 50px;
+  font-weight: 500;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">Inicio</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="menu_questoes.html">Acesse questões resolvidas</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"></i></a>
+    </div>
+  </nav>
+
+  <h5 style="vertical-align:middle;margin:0px 90px">Adicione as Informações para calcular o seu IMC:</h5>
+  <br>
+  <div class="row">
+    <form name="form_imc" id="form_imc">
+      <div class="row">
+        <div class="input-field col s1"></div>
+        <div class="input-field col s10">
+          <input placeholder="Nome" id="nome" name="nome" type="text" class="validate" required>
+          <label>Paciente:</label>
+        </div>
+        <div class="row">
+          <div class="input-field col s2"></div>
+          <div class="input-field col s3">
+            <input placeholder="100" id="peso" name="peso" type="number" min="0" required>
+            <label>Peso(Kg):</label>
+          </div>
+          <div class="input-field col s1"></div>
+          <div class="input-field col s4">
+            <input placeholder="1,80" id="altura" name="altura" type="number" min="0" required>
+            <label>Altura(m):</label>
+          </div>
+        </div>
+        <button style="vertical-align:middle;margin:0px 120px" onclick="calc_imc()"
+          class="btn btn-outline-primary float-right" type="button">Calcular</button>
+    </form>
+  </div>
+  
+  <p id="mostrar" style="vertical-align:middle;margin:0px 120px"></p><br><br>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Um pouco sobre os motivos dessa página</h5>
+          <p class="grey-text text-lighten-4">Essa página foi desenvolvida para uma atividade da faculdade. Foi usado como suporte um template de Materialize. Abaixo se encontra o link para o meu github.</p>
+
+          <a href="https://github.com/Antonio2828/projeto_web_antonio_02.git"><img src="img/icone github.png" height="30px" alt="GitHub"></a>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Redes sociais</h5>
+          <ul>
+            <li><a class="white-text" href="https://api.whatsapp.com/send?phone=87996254444&text="><img src="img/icone whatsapp.png" height="30px" alt="WhatsApp"></a></li>
+            <li><a class="white-text" href="https://www.instagram.com/antoniorsousa6/"><img src="img/icone facebook.png" height="30px" alt="Facebook"></a></li>
+            <li><a class="white-text" href="https://www.instagram.com/antoniorsousa6/"><img src="img/icone instagram.png" height="30px" alt="Instagram"></a></li>
+            <li><a class="white-text" href="mailto:Antonioribeirosousa288@outlook.com"><img src="img/icone gmail.png" height="30px" alt="E-mail"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>

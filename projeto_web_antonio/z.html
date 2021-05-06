@@ -1,0 +1,28 @@
+<h5 style="vertical-align:middle;margin:0px 90px">Adicione as Informações para calcular o seu IMC:</h5>
+<br>
+<div class="row">
+  <form name="form_imc" id="form_imc">
+    <div class="row">
+      <div class="input-field col s1"></div>
+      <div class="input-field col s10">
+        <input placeholder="Nome" id="nome" name="nome" type="text" class="validate" required>
+        <label>Paciente:</label>
+      </div>
+      <div class="row">
+        <div class="input-field col s2"></div>
+        <div class="input-field col s3">
+          <input placeholder="100" id="peso" name="peso" type="number" min="0" required>
+          <label>Peso(Kg):</label>
+        </div>
+        <div class="input-field col s1"></div>
+        <div class="input-field col s4">
+          <input placeholder="1,80" id="altura" name="altura" type="number" min="0" required>
+          <label>Altura(m):</label>
+        </div>
+      </div>
+      <button style="vertical-align:middle;margin:0px 120px" onclick="calc_imc()"
+        class="btn btn-outline-primary float-right" type="button">Calcular</button>
+  </form>
+</div>
+
+<p id="mostrar" style="vertical-align:middle;margin:0px 120px"></p><br><br>

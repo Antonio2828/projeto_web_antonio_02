@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu de questões resolvidas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">Inicio</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="menu_questoes.html">Acesse questões resolvidas</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"></i></a>
+    </div>
+  </nav>
+
+  <h2 class="center">Gerar carnê de pagamento de um cliente</h2>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="nome_do_cliente" type="text" class="validate">
+          <label for="nome_do_cliente">Nome do cliente</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+            <i class="material-icons prefix">local_grocery_store</i>
+            <input type="text" name="nome_produto" id="nome_produto">
+            <label for="nome_produto">Nome do produto</label>
+        </div>
+        <div class="input-field col s4">
+            <i class="material-icons prefix">monetization_on</i>
+            <input type="number" name="valor_item" id="valor_item">
+            <label for="valor_item">Preço do item</label>
+        </div>
+        <div class="input-field col s4">
+            <i class="material-icons prefix">format_list_numbered</i>
+            <input type="number" name="quantidade_itens" id="quantidade_itens">
+            <label for="quantidade_itens">Quantidade de itens</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">blur_linear</i>
+        <select id="qtde_parcelas">
+          <option value="" disabled selected>Escolha a opção</option>
+          <option value="1">1 parcela</option>
+          <option value="2">2 parcelas</option>
+          <option value="3">3 parcelas</option>
+          <option value="4">4 parcelas</option>
+          <option value="5">5 parcelas</option>
+          <option value="6">6 parcelas</option>
+        </select>
+        <label>Selecione a quantidade de parcelas</label>
+      </div>
+    </form>
+      <button onclick="gerar_carne()" class="btn waves-effect waves-light" type="submit" name="action">Gerar carnê
+        <i class="material-icons right">send</i>
+      </button>
+  </div>
+
+  <section id="mostrar_carne">
+
+  </section>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Um pouco sobre os motivos dessa página</h5>
+          <p class="grey-text text-lighten-4">Essa página foi desenvolvida para uma atividade da faculdade. Foi usado como suporte um template de Materialize. Abaixo se encontra o link para o meu github.</p>
+
+          <a href="https://github.com/Antonio2828/projeto_web_antonio_02.git"><img src="img/icone github.png" height="30px" alt="GitHub"></a>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Redes sociais</h5>
+          <ul>
+            <li><a class="white-text" href="https://api.whatsapp.com/send?phone=87996254444&text="><img src="img/icone whatsapp.png" height="30px" alt="WhatsApp"></a></li>
+            <li><a class="white-text" href="https://www.instagram.com/antoniorsousa6/"><img src="img/icone facebook.png" height="30px" alt="Facebook"></a></li>
+            <li><a class="white-text" href="https://www.instagram.com/antoniorsousa6/"><img src="img/icone instagram.png" height="30px" alt="Instagram"></a></li>
+            <li><a class="white-text" href="mailto:Antonioribeirosousa288@outlook.com"><img src="img/icone gmail.png" height="30px" alt="E-mail"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
